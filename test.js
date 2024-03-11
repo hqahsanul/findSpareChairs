@@ -1,6 +1,6 @@
 function findSpareChairs(Rooms, need) {
     if (need === 0) {
-        return [1];
+        return 1;
     }
 
     const chairsTaken = [];
@@ -24,7 +24,7 @@ function findSpareChairs(Rooms, need) {
     }
 
     if (t_ChairsNeeded > 0) {
-        return [0];
+        return 0;
     }
 
     return chairsTaken;
